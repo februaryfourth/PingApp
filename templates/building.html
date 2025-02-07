@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ building }} - PC Status</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <h1>{{ building }} - PC Status</h1>
+    <button onclick="pingBuilding('{{ building }}')">Ping All PCs</button>
+    <div id="results">
+        {% for host in hostnames %}
+        <div class="pc" id="{{ host }}">
+            <span>{{ host }}</span>
+            <div class="circle grey"></div>
+        </div>
+        {% endfor %}
+    </div>
+    <button onclick="window.history.back()">Go Back</button>
+</body>
+</html>

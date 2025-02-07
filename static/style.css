@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+h1 {
+    color: #333;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+ul{
+    list-style-type: none;
+
+}
+ul li{
+    margin: 2rem 0 0 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.pc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: grey;
+}
+
+.green { background: green; }
+.red { background: red; }
